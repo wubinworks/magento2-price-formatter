@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Wubinworks. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="currency">
+            <group id="options">
+                <field id="wubinworks_price_format" translate="label comment" type="textarea" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Price Format</label>
+                    <backend_model>Wubinworks\PriceFormatter\Model\Config\Backend\PriceFormat</backend_model>
+                    <comment><![CDATA[Leave empty to disable this feature<br />You can use HTML. Don't forget to change config scope and clear cache after changing format<br />Placeholders: {{price}}, {{price_no_decimal}}, {{price_bitcoin}}, {{symbol}}. For {{symbol}}, Check 'Stores > Currency > Currency Symbols'<br />Example: &#x91d1;{{price_no_decimal}}&#x5186;<br /><a href="https://github.com/wubinworks/magento2-price-formatter" target="_blank" rel="noreferrer">More help</a>]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

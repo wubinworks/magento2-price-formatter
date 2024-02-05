@@ -1,0 +1,38 @@
+{
+    "name": "wubinworks/module-price-formatter",
+    "description": "Formatting Price has never been easier with this extension. A Price Formatter for Magento 2.",
+    "require": {
+        "php": ">=7.3",
+        "magento/framework": "*",
+        "magento/magento2-base": "~2.4.0",
+        "magento/module-backend": "*",
+        "magento/module-catalog": "*",
+        "magento/module-config": "*",
+        "magento/module-currency-symbol": "*",
+        "magento/module-directory": "*",
+        "magento/module-theme": "*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Wubinworks",
+            "email": "wubinworks@outlook.com",
+            "homepage": "https://github.com/wubinworks/magento2-price-formatter",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Wubinworks\\PriceFormatter\\": ""
+        }
+    }
+}
